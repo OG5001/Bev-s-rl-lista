@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="507*"/>
+            <ColumnDefinition Width="293*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="244,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="312" FontSize="48" FontWeight="Bold" Grid.ColumnSpan="2"><Run Language="hu-hu" Text="Bevásárlólista"/><LineBreak/><Run Language="hu-hu"/></TextBlock>
+        <ListBox x:Name="lb_termekek" Grid.Row="1" Margin="0,0,0,156"/>
+        <Label x:Name="tetel" Content="Eddigi tételek száma: " HorizontalAlignment="Left" Margin="10,197,0,0" Grid.Row="1" VerticalAlignment="Top" Height="39" Width="214"/>
+        <Button x:Name="hozzaad" Grid.Column="1" Content="Button" HorizontalAlignment="Center" Margin="0,22,0,0" Grid.Row="1" VerticalAlignment="Top" Height="55" Width="106"/>
+        <Button x:Name="torol" Grid.Column="1" Content="Button" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Height="55" Width="106" Margin="0,135,0,0"/>
+        <Button x:Name="alltorol" Grid.Column="1" Content="Button" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Height="55" Width="106" Margin="0,243,0,0"/>
+
 
     </Grid>
 </Window>
